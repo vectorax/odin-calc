@@ -16,7 +16,7 @@ body{
     border-radius: 10px;
     padding:5px;
 }
-#display{
+#displayContainer{
     background-color: #777;
     border-radius: 5px;
     border:1px solid #333;
@@ -25,10 +25,10 @@ body{
     text-align: right;
     padding: 5px 10px;
 }
-#typedProblemBox{
+#subDisplay{
     font-size: 30px;
 }
-#solutionBox{
+#display{
     font-size: 50px;
 }
 .buttonRow{
