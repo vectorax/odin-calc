@@ -1,5 +1,6 @@
 body{
     background-color: #222;
+    font-family: sans-serif;
 }
 #wrapper{
     width: 100%;
@@ -19,7 +20,16 @@ body{
     background-color: #777;
     border-radius: 5px;
     border:1px solid #333;
-    margin-bottom:10px;
+    margin-bottom:5px;
+    color:rgb(233, 233, 233);
+    text-align: right;
+    padding: 5px 10px;
+}
+#typedProblemBox{
+    font-size: 30px;
+}
+#solutionBox{
+    font-size: 50px;
 }
 .buttonRow{
     display: grid;
