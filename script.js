@@ -7,10 +7,10 @@ const keypad = document.querySelector('#buttonContainer');
 const display = document.getElementById('display');
 const subDisplay = document.getElementById('subDisplay');
 
-keypad.addEventListener('click',fillDisplay,false);
+keypad.addEventListener('click',fillDisplay);
 
  function add(a, b){
-    return a + b
+    return parseInt(a) + parseInt(b)
  }
 
 function subtract(a, b){
@@ -24,13 +24,6 @@ function multiply(a, b){
 function divide(a, b){
     return a / b
 } 
-
-
-
-function input(){
-    let inputArea = document.getElementById("solutionArea");
-    inputArea.innerText()
-}
 
 function fillDisplay(e){
     
@@ -54,15 +47,21 @@ function operate(){
     let b = displayValue;
     console.log(storedValue);
     console.log(b);
-    if(operator == add){
+    if(operator == 'add'){
         solution = add(a,b)
     }
-    else if(operator == subtract){
+    else if(operator == 'subtract'){
         solution = subtract(a,b)
     }
-    else if(operator == multiply){
+    else if(operator == 'multiply'){
         solution = multiply(a,b)
     }
     else {solution = divide(a,b)}
     display.innerText = solution;
+}
+function clearEverything(){
+    storedValue = '';
+    displayValue = '';
+    display.innerText = displayValue;
+    subDisplay.innerText = storedValue;
 }
