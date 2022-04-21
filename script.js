@@ -45,8 +45,6 @@ function storeOne(e){
 function operate(){
     let a = storedValue;
     let b = displayValue;
-    console.log(storedValue);
-    console.log(b);
     if(operator == 'add'){
         solution = add(a,b)
     }
@@ -57,7 +55,8 @@ function operate(){
         solution = multiply(a,b)
     }
     else {solution = divide(a,b)}
-    display.innerText = solution;
+    displayValue = solution;
+    display.innerText = displayValue;
 }
 function clearEverything(){
     storedValue = '';
